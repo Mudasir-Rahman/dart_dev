@@ -13,6 +13,18 @@ class AllConstrctor {
     this.number = number;
     this.age = age;
   }
+  // ******************* named constructor *******************//
+  //when we want perameterized constructor then defult constructor
+  // is not called so we can use named constructor
+  //with help of named constructor we can call defult constructor
+  AllConstrctor.named() {
+    print("This is named  defult constructor");
+  }
+  AllConstrctor.named1(String name, int number, int age) {
+    this.name = name;
+    this.number = number;
+    this.age = age;
+  }
 }
 
 void main() {
@@ -24,4 +36,8 @@ void main() {
   print("Name: ${obj.name} Number: ${obj.number} Age: ${obj.age}");
 
   print("Name: ${obj1.name} Number: ${obj1.number} Age: ${obj1.age}");
+
+  AllConstrctor obj2 = AllConstrctor.named();
+  AllConstrctor obj3 = AllConstrctor.named1('Ahmed', 1122334455, 28);
+  print("Name: ${obj3.name} Number: ${obj3.number} Age: ${obj3.age}");
 }
