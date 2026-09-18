@@ -12,4 +12,10 @@ class Information {
   set address(String? address) => _address = address;
   int? get age => _age;
   set age(int? age) => _age = age;
+  getInfo() {
+    print('Name: $_name');
+    print('Gender: $_gender');
+    print('Address: $_address');
+    print('Age: $_age');
+  }
 }
